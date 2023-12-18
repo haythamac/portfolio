@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .a-tags{
+        @apply text-white;
+    }
+    .a-tags:hover{
+        @apply text-violet-400;
+    }
+}

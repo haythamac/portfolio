@@ -2,4 +2,5 @@
     @include('home.home')
     @include('home.about')
     @include('home.skills')
+    @include('home.portfolio')
 </div>

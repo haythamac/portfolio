@@ -1,6 +1,6 @@
 <div class="flex m-auto w-248 mb-64 mt-64">
     <div class="w-full">
-        <img src="/images/ha.png" alt="">
+        <img src="/images/cat.png" alt="my picture" class="w-72 h-72">
     </div>
     <div class="flex flex-col items-start gap-4">
         <span class="uppercase text-blue-700 font-bold text-xl">About</span>

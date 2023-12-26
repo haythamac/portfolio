@@ -15,9 +15,6 @@ class HomeController extends Controller
     }
     public function store(Request $request)
     {
-        // gawa ka na model ng skills, portfolio, etc
-        // then lagay mo dito yung logic
-        // then display mo
         // wag mo kalimutan yung auth para ikaw lang ang makaka-access
         // remove mo yung register para di makagawa iba accidentally
         $data = new Project;
@@ -34,5 +31,32 @@ class HomeController extends Controller
         $data->save();
 
         return redirect()->route('home.index')->with('message', 'Project added successfully');
+    }
+
+    public function delete($id)
+    {
+        $project = Project::find($id);
+        $project->delete();
+        return redirect()->route('home.index')->with('message', 'Project deleted successfully');
+    }
+    public function update(Request $request, $id)
+    {
+        $project = Project::find($id);
+        
+        $project->name = $request->name;
+        $project->description = $request->description;
+        $project->year = $request->year;
+
+        $image = $request->image;
+        if($image)
+        {
+            $imageName = time().'.'.$image->getClientOriginalExtension();
+            $request->image->move('project-images', $imageName);
+            $project->image = $imageName;
+        }
+
+        $project->save();
+
+        return redirect()->route('home.index')->with('message', 'Project updated successfully');
     }
 }

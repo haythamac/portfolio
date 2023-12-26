@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -19,6 +20,8 @@ Route::get('/', [HomeController::class, 'index'])->name('home.index');
 Route::post('/store', [HomeController::class, 'store'])->name('home.store');
 Route::delete('/delete/{id}', [HomeController::class, 'delete'])->name('home.delete');
 Route::post('/update/{id}', [HomeController::class, 'update'])->name('home.update');
+
+Route::post('/send-mail', [MailController::class, 'sendMail'])->name('home.mail');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -1,4 +1,4 @@
-<div class="flex m-auto w-248 mb-64 mt-64">
+<div class="flex m-auto w-248 mb-64 pt-48" id="about">
     <div class="w-full">
         <img src="/images/cat.png" alt="my picture" class="w-72 h-72">
     </div>

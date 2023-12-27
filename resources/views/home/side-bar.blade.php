@@ -4,11 +4,11 @@
     </div>
     <div>
         <ul class="flex flex-col gap-10">
-            <li><a class="a-tags" href="">Home</a></li>
-            <li><a class="a-tags" href="">About</a></li>
-            <li><a class="a-tags" href="">Skills</a></li>
-            <li><a class="a-tags" href="">Portfolio</a></li>
-            <li><a class="a-tags" href="">Contact</a></li>
+            <li><a class="a-tags" href="#home">Home</a></li>
+            <li><a class="a-tags" href="#about">About</a></li>
+            <li><a class="a-tags" href="#skills">Skills</a></li>
+            <li><a class="a-tags" href="#portfolio">Portfolio</a></li>
+            <li><a class="a-tags" href="#contact">Contact</a></li>
         </ul>
     </div>
 </div>

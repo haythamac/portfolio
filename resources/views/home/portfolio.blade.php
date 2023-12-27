@@ -1,4 +1,4 @@
-<div class="flex flex-col justify-start m-auto w-248 mb-64 mt-8">
+<div class="flex flex-col justify-start m-auto w-248 mb-64 mt-8" id="portfolio">
     <span class="font-bold text-blue-700 uppercase mb-4">Portfolio</span>
     <span class="font-extrabold text-3xl mb-16">Projects</span>
     <div class="grid grid-cols-2">
@@ -22,6 +22,7 @@
                 </div>
 
                 <!-- Livewire Component for Edit/Delete -->
+                @auth
                 <div x-show="isOpen" @click.away="isOpen = false" class="fixed inset-0 bg-black bg-opacity-50 z-50">
                     <div
                         class="fixed border py-16 px-16 bg-white rounded top-1/2 left-1/2 transform -translate-x-1/3 -translate-y-1/2 z-50">
@@ -35,9 +36,11 @@
                         @livewire('edit-project-form', ['projectId' => $project->id])
                     </div>
                 </div>
+                @endauth
             </div>
         @endforeach
 
+        @auth
         <div x-data="{ isOpen: false }">
             <div @click="isOpen = true"
                 class="cursor-pointer relative group max-w-md h-48 mb-16 overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 transform hover:scale-105">
@@ -54,23 +57,23 @@
                 </div>
             </div>
 
-            @if (Auth::user())
-            <div x-show="isOpen" @click.away="isOpen = false" class="fixed inset-0 bg-black bg-opacity-50 z-50">
-                <div
-                    class="fixed border py-16 px-16 bg-white rounded top-1/2 left-1/2 transform -translate-x-1/3 -translate-y-1/2 z-50">
-                    <button @click="isOpen = false" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                    @livewire('add-project-form')
+            
+                <div x-show="isOpen" @click.away="isOpen = false" class="fixed inset-0 bg-black bg-opacity-50 z-50">
+                    <div
+                        class="fixed border py-16 px-16 bg-white rounded top-1/2 left-1/2 transform -translate-x-1/3 -translate-y-1/2 z-50">
+                        <button @click="isOpen = false" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                        @livewire('add-project-form')
+                    </div>
                 </div>
-            </div>
-            @endif
+            
         </div>
-
+        @endauth
     </div>
 
 </div>

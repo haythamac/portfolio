@@ -1,7 +1,9 @@
-<div class="flex flex-col justify-start m-auto w-248 mb-16 mt-64">
+<div class="flex flex-col justify-start m-auto w-248 mb-16 mt-48 pt-16" id="skills">
     <span class="font-bold text-blue-700 uppercase mb-4">Skills</span>
     <span class="font-extrabold text-3xl mb-8">Experience & Skills</span>
+    @auth
     <div class="flex justify-between w-1/3">
+        
         <div x-data="{ isOpen: false }">
             <button @click="isOpen = true"
                 class="uppercase text-white mb-8 bg-blue-700 hover:bg-yellow-400 hover:text-black p-3 rounded duration-500">
@@ -23,6 +25,7 @@
                 </div>
             </div>
         </div>
+        
         <div x-data="{ isOpen: false }">
             <button @click="isOpen = true"
                 class="uppercase text-white mb-8 bg-blue-700 hover:bg-yellow-400 hover:text-black p-3 rounded duration-500">
@@ -45,6 +48,7 @@
             </div>
         </div>
     </div>
+    @endauth
 
     <div class="grid grid-cols-2">
         @foreach ($categories as $category)

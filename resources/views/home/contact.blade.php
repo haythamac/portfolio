@@ -1,4 +1,4 @@
-<div class="flex flex-col justify-start m-auto w-248 mb-16">
+<div class="flex flex-col justify-start m-auto w-248 mb-16" id="contact">
     <span class="font-bold text-blue-700 uppercase mb-4">Contact</span>
     <span class="font-extrabold text-3xl mb-16">Send me a message</span>
 

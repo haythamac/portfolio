@@ -4,14 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Project;
+use App\Models\Skill;
+use App\Models\Category;
 
 class HomeController extends Controller
 {
     public function index()
     {
         $projects = Project::all();
+        $categories = Category::all();
+        $skills = Skill::all();
 
-        return view('welcome', compact('projects'));
+        return view('welcome', compact('projects', 'categories', 'skills'));
     }
     public function store(Request $request)
     {

@@ -54,7 +54,7 @@
                 </div>
             </div>
 
-
+            @if (Auth::user())
             <div x-show="isOpen" @click.away="isOpen = false" class="fixed inset-0 bg-black bg-opacity-50 z-50">
                 <div
                     class="fixed border py-16 px-16 bg-white rounded top-1/2 left-1/2 transform -translate-x-1/3 -translate-y-1/2 z-50">
@@ -68,6 +68,7 @@
                     @livewire('add-project-form')
                 </div>
             </div>
+            @endif
         </div>
 
     </div>

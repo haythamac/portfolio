@@ -1,26 +1,24 @@
 <?php
 
-use App\Http\Controllers\MailController;
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MailController;
+use App\Http\Controllers\SkillController;
+use App\Http\Controllers\ProfileController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
 
 Route::get('/', [HomeController::class, 'index'])->name('home.index');
+
+//skill
+Route::post('/skill/store', [SkillController::class, 'store'])->name('skill.store');
+Route::post('/skill/category/store', [SkillController::class, 'storeCategory'])->name('skill.category.store');
+
+// project
 Route::post('/store', [HomeController::class, 'store'])->name('home.store');
 Route::delete('/delete/{id}', [HomeController::class, 'delete'])->name('home.delete');
 Route::post('/update/{id}', [HomeController::class, 'update'])->name('home.update');
 
+// contact
 Route::post('/send-mail', [MailController::class, 'sendMail'])->name('home.mail');
 
 Route::get('/dashboard', function () {

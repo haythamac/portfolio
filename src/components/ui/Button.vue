@@ -5,11 +5,13 @@ interface Props {
     variant?: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link";
     size?: "default" | "sm" | "lg" | "icon";
     class?: string;
+    asChild?: boolean;
 }
 
 const props = withDefaults(defineProps<Props>(), {
     variant: "default",
     size: "default",
+    asChild: false,
 });
 
 const variants: Record<string, string> = {
@@ -39,7 +41,7 @@ const classes = computed(() =>
 </script>
 
 <template>
-    <button :class="classes">
+    <component :is="asChild ? 'span' : 'button'" :class="classes">
         <slot />
-    </button>
+    </component>
 </template>

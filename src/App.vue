@@ -1,5 +1,6 @@
 <script setup>
 import Header from './components/Header.vue';
+import HeroSection from './components/HeroSection.vue';
 
 
 </script>
@@ -7,9 +8,8 @@ import Header from './components/Header.vue';
 <template>
 	<!-- header -->
 	<Header />
-	asd
 	<!-- hero section -->
-
+	<HeroSection />
 	<!-- project showcase -->
 
 	<!-- skill section -->

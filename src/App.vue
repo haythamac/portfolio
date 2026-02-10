@@ -11,7 +11,7 @@ import HeroSection from './components/HeroSection.vue';
 	<!-- hero section -->
 	<HeroSection />
 	<!-- project showcase -->
-
+	<ProjectShowcase />
 	<!-- skill section -->
 
 	<!-- experience section -->

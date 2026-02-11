@@ -13,10 +13,10 @@ const techStack = [
     { name: "Vue.js", icon: Layout },
     { name: "MySQL", icon: Database },
     { name: "REST API", icon: Code2 },
-];
+];asdasd
 </script>
 
-
+a
 
 <template>
     <section>

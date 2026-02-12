@@ -1,6 +1,6 @@
-<script setup lang="ts">
-import { ArrowDown, Github, Mail } from "lucide-vue-next";
-import Button from "@/components/ui/Button.vue";
+<script setup>
+import { ArrowDown, Github, Mail } from 'lucide-vue-next';
+import Button from '@/components/ui/Button.vue';
 </script>
 
 <template>
@@ -21,21 +21,20 @@ import Button from "@/components/ui/Button.vue";
                 <span class="text-primary font-medium">Vue</span>.
                 From concept to deployment, I create systems that solve actual problems.
             </p>
-
             <div class="flex flex-wrap gap-4 mb-12">
-                <Button asChild size="lg">
+                <Button as-child size="lg">
                     <a href="#projects">
                         <ArrowDown class="mr-2 h-4 w-4" />
                         View Projects
                     </a>
                 </Button>
-                <Button variant="outline" size="lg" asChild>
+                <Button variant="outline" size="lg" as-child>
                     <a href="https://github.com/janssenuy" target="_blank" rel="noopener noreferrer">
                         <Github class="mr-2 h-4 w-4" />
                         GitHub
                     </a>
                 </Button>
-                <Button variant="ghost" size="lg" asChild>
+                <Button variant="ghost" size="lg" as-child>
                     <a href="#contact">
                         <Mail class="mr-2 h-4 w-4" />
                         Contact

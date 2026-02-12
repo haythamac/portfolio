@@ -1,16 +1,16 @@
-<script setup lang="ts">
-import { ref } from "vue";
-import { Menu, X } from "lucide-vue-next";
-import Button from "@/components/ui/Button.vue";
+<script setup>
+import { ref } from 'vue';
+import { Menu, X } from 'lucide-vue-next';
+import Button from '@/components/ui/Button.vue';
 
 const isOpen = ref(false);
 
 const navLinks = [
-    { href: "#projects", label: "Projects" },
-    { href: "#skills", label: "Skills" },
-    { href: "#experience", label: "Experience" },
-    { href: "#about", label: "About" },
-    { href: "#contact", label: "Contact" },
+    { href: '#projects', label: 'Projects' },
+    { href: '#skills', label: 'Skills' },
+    { href: '#experience', label: 'Experience' },
+    { href: '#about', label: 'About' },
+    { href: '#contact', label: 'Contact' },
 ];
 </script>
 

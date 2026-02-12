@@ -1,6 +1,7 @@
 <script setup>
 import Header from './components/Header.vue';
 import HeroSection from './components/HeroSection.vue';
+import ProjectShowcase from './components/ProjectShowcase.vue';
 
 
 </script>

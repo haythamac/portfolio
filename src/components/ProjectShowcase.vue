@@ -89,13 +89,13 @@ const techStack = [
 
                         <div class="flex flex-wrap gap-3">
                             <Button as-child>
-                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="flex row">
                                     <ExternalLink class="mr-2 h-4 w-4" />
                                     Live Demo
                                 </a>
                             </Button>
                             <Button variant="outline" as-child>
-                                <a href="https://github.com/janssenuy" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/janssenuy" target="_blank" rel="noopener noreferrer" class="flex row">
                                     <Github class="mr-2 h-4 w-4" />
                                     Source Code
                                 </a>

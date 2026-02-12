@@ -23,19 +23,19 @@ import Button from '@/components/ui/Button.vue';
             </p>
             <div class="flex flex-wrap gap-4 mb-12">
                 <Button as-child size="lg">
-                    <a href="#projects">
+                    <a href="#projects" class="flex row">
                         <ArrowDown class="mr-2 h-4 w-4" />
                         View Projects
                     </a>
                 </Button>
                 <Button variant="outline" size="lg" as-child>
-                    <a href="https://github.com/janssenuy" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/haythamac" target="_blank" rel="noopener noreferrer" class="flex row">
                         <Github class="mr-2 h-4 w-4" />
                         GitHub
                     </a>
                 </Button>
                 <Button variant="ghost" size="lg" as-child>
-                    <a href="#contact">
+                    <a href="#contact" class="flex row">
                         <Mail class="mr-2 h-4 w-4" />
                         Contact
                     </a>

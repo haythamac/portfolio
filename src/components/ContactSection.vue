@@ -6,21 +6,21 @@ const contacts = [
     {
         name: "GitHub",
         icon: Github,
-        href: "https://github.com/janssenuy",
-        label: "github.com/janssenuy",
+        href: "https://github.com/haythamac",
+        label: "github.com/haythamac",
     },
     {
         name: "Email",
         icon: Mail,
-        href: "mailto:janssen.uy@email.com",
+        href: "mailto:janssen.uy.dev@email.com",
         label: "janssen.uy@email.com",
     },
-    {
-        name: "LinkedIn",
-        icon: Linkedin,
-        href: "https://linkedin.com/in/janssenuy",
-        label: "linkedin.com/in/janssenuy",
-    },
+    // {
+    //     name: "LinkedIn",
+    //     icon: Linkedin,
+    //     href: "https://linkedin.com/in/janssenuy",
+    //     label: "linkedin.com/in/janssenuy",
+    // },
 ];
 </script>
 
@@ -39,7 +39,7 @@ const contacts = [
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
                 <Button size="lg" as-child>
-                    <a href="mailto:janssen.uy@email.com" class="flex row">
+                    <a href="mailto:janssen.uy.dev@email.com" class="flex row">
                         <Mail class="mr-2 h-4 w-4" />
                         Send an Email
                     </a>

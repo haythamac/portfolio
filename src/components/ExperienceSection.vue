@@ -21,10 +21,10 @@ const experiences = [
             "Created component-based Vue.js applications with state management, routing, and responsive UI design.",
     },
     {
-        title: "Project Ownership",
+        title: "Backend Development & Deployment",
         icon: Briefcase,
         description:
-            "Managed complete project lifecycle from requirements gathering to deployment, making technical decisions and solving problems independently.",
+            "Handled backend development with Laravel, including database management and deployment to platforms like Heroku and Vercel.",
     },
 ];
 </script>

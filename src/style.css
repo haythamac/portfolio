@@ -4,6 +4,11 @@
 
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 @theme {
   --color-background: hsl(240 4% 95%);
   --color-foreground: hsl(240 5% 10%);

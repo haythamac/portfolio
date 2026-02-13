@@ -18,7 +18,7 @@ const navLinks = [
     <header class="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="#" class="font-bold text-lg text-foreground">
-                DevelopedByJanssen<span class="text-primary">.</span>
+                Janssen Uy<span class="text-primary">.</span>
             </a>
 
             <!-- Desktop Navigation -->

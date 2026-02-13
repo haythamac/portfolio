@@ -33,14 +33,12 @@ const projects = [
         ],
         features: [
             "Member management with roles and permissions",
-            "Event scheduling and notifications",
-            "Integrated chat system for real-time communication",
-            "Dashboard with guild statistics and analytics",
+            "Raffle system for event participation",
+            "Item Distribution tracking and management",
             "Responsive design for mobile and desktop",
-            "Secure authentication and data handling",
         ],
         demoLink: "https://yourproject.com",
-        githubLink: "https://github.com/janssenuy/your-project",
+        githubLink: "https://github.com/haythamac/paragon-fe",
     },
 ];
 </script>

@@ -10,7 +10,7 @@ const skillCategories = [
     {
         title: "Frontend",
         icon: Layout,
-        skills: ["Vue.js", "JavaScript", "Tailwind CSS", "HTML/CSS", "Responsive Design"],
+        skills: ["Vue.js", "JavaScript", "Tailwind CSS", "Shadcn", "Responsive Design"],
     },
     {
         title: "Database",

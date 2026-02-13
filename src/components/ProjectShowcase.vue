@@ -32,7 +32,7 @@ const projects = [
     },
     {
         title: "Guild Management System",
-        image: "images/paragon.png",
+        image: " images/paragon.png",
         description: "A comprehensive guild management system designed for online gaming communities. This full-stack application allows guild leaders to manage members, events, and communications effectively. Built with Laravel for the backend and Vue.js for the frontend, it offers a seamless user experience.",
         techStack: [
             { name: "Laravel", icon: Server },

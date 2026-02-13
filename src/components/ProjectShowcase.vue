@@ -14,7 +14,7 @@ const getImagePath = (imagePath) => {
 const projects = [
     {
         title: "Mileage Calculator",
-        image: "/images/mileage-calculator.png",
+        image: "images/mileage-calculator.png",
         description: "A simple mileage calculator for a game called Legend of Ymir. It allows users to input their deposits and calculates the total mileage earned based on the game's mechanics. Built with Vue.js, it features a simple design and calculations.",
         techStack: [
             { name: "Vue.js", icon: Layout },
@@ -32,7 +32,7 @@ const projects = [
     },
     {
         title: "Guild Management System",
-        image: "/images/paragon.png",
+        image: "images/paragon.png",
         description: "A comprehensive guild management system designed for online gaming communities. This full-stack application allows guild leaders to manage members, events, and communications effectively. Built with Laravel for the backend and Vue.js for the frontend, it offers a seamless user experience.",
         techStack: [
             { name: "Laravel", icon: Server },
@@ -125,13 +125,13 @@ const projects = [
 
                         <div class="flex flex-wrap gap-3">
                             <Button as-child>
-                                <a :href="project.demoLink" target="_blank" rel="noopener noreferrer">
+                                <a :href="project.demoLink" target="_blank" rel="noopener noreferrer" class="flex row">
                                     <ExternalLink class="mr-2 h-4 w-4" />
                                     Live Demo
                                 </a>
                             </Button>
                             <Button variant="outline" as-child>
-                                <a :href="project.githubLink" target="_blank" rel="noopener noreferrer">
+                                <a :href="project.githubLink" target="_blank" rel="noopener noreferrer" class="flex row">
                                     <Github class="mr-2 h-4 w-4" />
                                     Source Code
                                 </a>

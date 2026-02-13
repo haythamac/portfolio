@@ -3,6 +3,14 @@ import { ExternalLink, Github, Database, Server, Layout, Code2 } from 'lucide-vu
 import Button from '@/components/ui/button.vue';
 import Badge from '@/components/ui/badge.vue';
 
+
+// Helper function to get correct image path
+const getImagePath = (imagePath) => {
+    if (!imagePath) return null;
+    return `${import.meta.env.BASE_URL}${imagePath}`;
+};
+
+
 const projects = [
     {
         title: "Mileage Calculator",
@@ -61,7 +69,7 @@ const projects = [
                     <!-- Project Preview -->
                     <div class="bg-secondary/10 p-8 flex items-center justify-center min-h-[300px] lg:min-h-[400px]">
                         <!-- Show image if available -->
-                        <img v-if="project.image" :src="project.image" :alt="project.title"
+                        <img v-if="project.image" :src="getImagePath(project.image)" :alt="project.title"
                             class="w-full h-full object-cover rounded-lg shadow-xl" />
                         <!-- Show default mockup if no image -->
                         <div v-else class="w-full max-w-md">
@@ -117,13 +125,13 @@ const projects = [
 
                         <div class="flex flex-wrap gap-3">
                             <Button as-child>
-                                <a :href="project.demoLink" target="_blank" rel="noopener noreferrer" class="flex row">
+                                <a :href="project.demoLink" target="_blank" rel="noopener noreferrer">
                                     <ExternalLink class="mr-2 h-4 w-4" />
                                     Live Demo
                                 </a>
                             </Button>
                             <Button variant="outline" as-child>
-                                <a :href="project.githubLink" target="_blank" rel="noopener noreferrer" class="flex row">
+                                <a :href="project.githubLink" target="_blank" rel="noopener noreferrer">
                                     <Github class="mr-2 h-4 w-4" />
                                     Source Code
                                 </a>
